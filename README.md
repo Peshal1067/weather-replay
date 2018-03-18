@@ -1,5 +1,10 @@
 # WeatherReplay
 
+Replay overnight resort weather to help ski patrol predict snow accumulation and avalanche dangers
+
+
+---
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.8.
 
 ## Development server
