@@ -1,0 +1,17 @@
+<h2>Weather Stations</h2>
+<ul class="stations">
+  <li *ngFor="let station of stations"
+    [class.selected]="station === selectedStation"
+    (click)="onSelect(station)">
+    <span class="badge">{{station.id}}</span> {{station.name}}
+  </li>
+</ul>
+
+<div *ngIf="selectedStation">
+
+  <h2>{{ selectedStation.name | uppercase }} Details</h2>
+  <div><span>ID: </span>{{selectedStation.id}}</div>
+  <div><span>Name: </span>{{selectedStation.name}}</div>
+  <div><span>Elevation: </span>{{selectedStation.elevation}}</div>
+
+</div>
