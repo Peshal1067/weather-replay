@@ -1,26 +1,41 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
+import { MaterialModule } from './material.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { AppComponent } from './app.component';
-import { AppRoutingModule } from './/app-routing.module';
-import { MapComponent } from './map/map.component';
-import { MapStationComponent } from './map-station/map-station.component';
-import { StationsComponent } from './stations/stations.component';
+import { AppRoutingModule } from './app-routing.module';
+
+import { MapModule } from './map/map.module';
+import { StationsModule } from './stations/stations.module';
+import { AboutComponent } from './about/about.component';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    MapComponent,
-    MapStationComponent,
-    StationsComponent
+    AboutComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    FormsModule,
+    HttpClientModule,
+    MaterialModule,
+    BrowserAnimationsModule,
+    AppRoutingModule,
+    FlexLayoutModule,
+    MapModule,
+    StationsModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [
+    AboutComponent
+  ]
 })
 export class AppModule { }

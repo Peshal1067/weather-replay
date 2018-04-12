@@ -1,5 +1,49 @@
-h1 {
-  color: #369;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 250%;
+body {
+  margin: 0;
+  font-family: Roboto, sans-serif;
+}
+
+mat-sidenav {
+  width: 320px;
+  /* display: flex; */
+}
+
+mat-nav-list {
+  /* padding-top: 75px; */
+
+}
+
+mat-icon {
+  opacity: .62;
+  /* padding-right: 20px; */
+}
+
+mat-divider {
+  margin: 10px 0 10px 0;
+}
+
+/* :host {
+  display: flex;
+  flex: 1;
+} */
+
+
+
+
+
+
+
+.done {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: white;
+}
+
+#hamburger
+/*, #hamburger--close */
+{
+  position: absolute;
+  left: 20px;
+  top: 20px;
 }
