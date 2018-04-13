@@ -1,0 +1,10 @@
+#social {
+    font-size: 2em;
+    color: black;
+    opacity: .8;
+}
+
+#social a {
+    color: black;
+    text-decoration: none;
+}
